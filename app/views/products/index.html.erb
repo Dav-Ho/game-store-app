@@ -1,1 +1,16 @@
-<h1>This is the index page</h1>
+<section>
+  <div class="row">
+
+<h1>Welcome to My Gaming App</h1>
+
+<% @products.each do |product| %>
+  <div class="col-sm-4">
+    <div class="product_single">
+      <h2 class="product-header"><%= product.name %></h2>
+      <p>Price: <%= product.price %></p>
+      <p>Description: <%= product.description %></p>
+    </div>
+  </div>
+<% end %>
+  </div>
+</section>
